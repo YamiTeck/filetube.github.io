@@ -8,7 +8,7 @@ Added more packs
 - Halloween Mash-up
 
 V1.0 - 5/7/2025
-Realese the website
+Release the website
 - Fantasy Texture Pack
 - City Texture Pack
 - Plastic Texture Pack
