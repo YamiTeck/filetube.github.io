@@ -1,6 +1,6 @@
 # filetube.github.io
 
-This is mostly personal use right now becausse the files are password protected but if you need the password just message me on discord at teackaizza
+This is mostly personal use right now becausse the files are password protected but if you need the password just join the [disccord server](https://discord.gg/H8XDstGhpR)
 
 The first tag represent the creator of the pack
 
