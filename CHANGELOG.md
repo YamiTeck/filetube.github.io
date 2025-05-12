@@ -1,3 +1,6 @@
+V1.2.3 - 5/11/2025
+- Hotfix, I might have solved the issuse I hope.
+
 V1.2.2 - 5/11/2025
 - Hotfix for github logo not loading in top left of the screen (I hope I fixed it this time)
 
