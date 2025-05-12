@@ -1,3 +1,6 @@
+V1.2.2 - 5/11/2025
+- Hotfix for github logo not loading in top left of the screen (I hope I fixed it this time)
+
 V1.2.1 - 5/11/2025
 - Hotfix for github logo not loading in top left of the screen
 
