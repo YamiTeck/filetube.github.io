@@ -54,45 +54,136 @@ const files = [
       url: "https://mega.nz/file/bDJmlKKT#uh2OMwpNjlVrksCbC-dhIIGFcWQeBH0EIamhqb6id8s",
       thumbnail: "https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/e97add21-372e-469e-b665-ec77110e7ecc/Festive_Mashup_thumbnail_0.jpg",
       description: "Wander through a winter wonderland! World, textures, skins and more!",
-      tags: ["Minecarft", "Texture"]
+      tags: ["Minecraft", "Texture"]
     },
     {
       name: "Festive Mash-up 2016",
       url: "https://mega.nz/file/bD43kTwJ#SJKv_i1LjQNexEfgcN8Ix894AB0Txjl0z-Z3Cw7X284",
       thumbnail: "https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/e97add21-372e-469e-b665-ec77110e7ecc/Festive_Mashup_thumbnail_0.jpg",
       description: "Wander through a winter wonderland! World, textures, skins and more!",
-      tags: ["Minecarft", "World"]
+      tags: ["Minecraft", "World"]
     },
     {
       name: "Festive Mash-up 2016",
       url: "https://mega.nz/file/Xfw0BIaL#9pc_rgBqeFhf031RxTGObxqGHz6xtjUHupzTpliOyYY",
       thumbnail: "https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/e97add21-372e-469e-b665-ec77110e7ecc/Festive_Mashup_thumbnail_0.jpg",
       description: "Wander through a winter wonderland! World, textures, skins and more!",
-      tags: ["Minecarft", "Skin"]
+      tags: ["Minecraft", "Skin"]
     },
     {
       name: "Halloween Mash-up",
       url: "https://mega.nz/file/WHBzHKKL#2HA8eslJC9LX61jlfRJarneV-GaATgLt9vXSmE96WZw",
       thumbnail: "https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/d3ce4a51-7f02-450d-ad90-098c190b84a2/Halloween_Thumbnail_0.jpg",
       description: "Happy Halloween! Dress suitably spookily and prepare for the ultimate Minecraft Halloween thrill ride!",
-      tags: ["Minecarft", "Texture"]
+      tags: ["Minecraft", "Texture"]
     },
     {
       name: "Halloween Mash-up",
       url: "https://mega.nz/file/HHBjlZ6J#B8-0Fjs5rD7qlUk3BfM-bNKCHY1LNC9cfbE6sKiDreQ",
       thumbnail: "https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/d3ce4a51-7f02-450d-ad90-098c190b84a2/Halloween_Thumbnail_0.jpg",
       description: "Happy Halloween! Dress suitably spookily and prepare for the ultimate Minecraft Halloween thrill ride!",
-      tags: ["Minecarft", "World"]
+      tags: ["Minecraft", "World"]
     },
     {
       name: "Halloween Mash-up",
       url: "https://mega.nz/file/OfJUnAxA#lgDzuAEu1YTXtQNBFTpAC3fFvXx0-TH6Wv8XcIaCJRY",
       thumbnail: "https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/d3ce4a51-7f02-450d-ad90-098c190b84a2/Halloween_Thumbnail_0.jpg",
       description: "Happy Halloween! Dress suitably spookily and prepare for the ultimate Minecraft Halloween thrill ride!",
-      tags: ["Minecarft", "Skin"]
+      tags: ["Minecraft", "Skin"]
+    },
+    {
+      name: "1st Birthday Skin Pack",
+      url: "https://mega.nz/file/mHQ1jYBI#eH2d0U61tdTgRljY36e6SDlwvPlIt8dlcy5GPFyhYiY",
+      thumbnail: "https://xforgeassets001.xboxlive.com/pf-title-b63a0803d3653643-20ca2/b3292e60-9898-4813-869c-40b301b5ac0a/1stBirthday_Thumbnail_0.jpg",
+      description: "Join the Minecraft party now!",
+      tags: ["Minecraft", "Skin"]
+    },
+      {
+      name: "2nd Birthday Skin Pack",
+      url: "https://mega.nz/file/nX4DFDwL#2_rq3kTu8rrGMBA5uom7Wl3bNXDvfywDiXN-E-tA6dU",
+      thumbnail: "https://cdn.mobygames.com/covers/2257914-minecraft-xbox-one-edition-2nd-birthday-skin-pack-xbox-one-front.png",
+      description: "Dress up for the party… and celebrate Minecraft’s 2nd birthday with us!",
+      tags: ["Minecraft", "Skin"]
+    },
+    {
+      name: "3rd Birthday Skin Pack",
+      url: "https://mega.nz/file/vKhnmCzZ#cxYmVcs0koaBr-OiapnnSp-LKboApAduvuShFgtPBqA",
+      thumbnail: "https://cdn.mobygames.com/covers/3222553-minecraft-xbox-one-edition-3rd-birthday-skin-pack-xbox-one-front.png",
+      description: "Celebrate Minecraft’s 3rd Birthday on Xbox with the original Minecraft developers! Find their personal skins in this free celebration pack",
+      tags: ["Minecraft", "Skin"]
+    },
+    {
+      name: "MINECON Earth 2017 Skin Pack",
+      url: "https://mega.nz/file/CGgxVDTS#-TTsQ14uo8OWc4AJ0I8X4xadCGTeBwIV2AmzTLsVwUc",
+      thumbnail: "https://xforgeassets002.xboxlive.com/serviceid-18231953-4b1d-472c-a39e-48b10105b7b7-public/e08abe63-a71c-492d-a166-000d3b5cf121/MINECONEARTH_Thumbnail_0.jpg",
+      description: "Join the party, wherever you are - and get dressed for the occasion with these fancy skins, celebrating everything from cosplay to cake! Available for a short time only, so get 'em fast!",
+      tags: ["Minecraft", "Skin"]
+    },
+    {
+      name: "4th Birthday Skin Pack",
+      url: "https://mega.nz/file/iToRUaTT#fTSy2j97vzccusFfaBoqOJVIa2wNGfc0A-cyJlLS_Z4",
+      thumbnail: "https://cdn.mobygames.com/covers/2258952-minecraft-xbox-one-edition-4th-birthday-skin-pack-xbox-one-front.png",
+      description: "Dress up for the party with this new, Free skin pack and celebrate together the 4th Minecraft birthday!",
+      tags: ["Minecraft", "Skin"]
+    },
+    {
+      name: "Skin Pack 1 - Classic",
+      url: "https://mega.nz/file/mGQX0DTI#4175Sds2e0YaumPxbdMrIU3ncPj1Raf_F7rVDgEMuCU",
+      thumbnail: "https://xforgeassets001.xboxlive.com/pf-title-b63a0803d3653643-ee7b/db90b652-cfe4-40a5-bb5f-9e534d01daa4/SkinPack1Sony_Thumbnail_0.jpg",
+      description: "A special edition of Skin Pack 1 for PlayStation®4, featuring exclusive characters plus favorites from the Classic version.",
+      tags: ["Minecraft", "Skin"]
+    },
+    {
+      name: "Skin Pack 2 - Classic",
+      url: "https://mega.nz/file/3fAhRaDC#De-jm9rugzNWBLPJ6UxwMop0PiQgpwfvdLJ8stgPSpI",
+      thumbnail: "https://xforgeassets002.xboxlive.com/pf-title-b63a0803d3653643-ee7b/65c0d4ee-e8f9-417d-97b1-3d05419fcf08/Minecraft_SkinPack2_Thumbnail_0.jpg",
+      description: "Customise your Minecraft character with this 2nd selection of stunning skins!",
+      tags: ["Minecraft", "Skin"]
+    },
+    {
+      name: "Magic Spells",
+      url: "https://mega.nz/file/XKYlGASY#Eue7W4aWbS29n0si7OuOYCmfL0icmtafNVv4q5lutPI",
+      thumbnail: "https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/01bc5296-3c3d-4920-8333-cde9172f887b/Magic_Spells_thumbnail_0.jpg",
+      description: "Level up your Minecraft world with 15 epic spells, custom magic armor, and powers like fireballs, minions, and time control—ready to transform any new or existing world!",
+      tags: ["Cyclone", "Mod"]
+    },
+    {
+      name: "Dinosaurs Add-On 2.1",
+      url: "https://mega.nz/file/nfBCjbpR#jDmPFZIgh2Ma1UidZAtAdW1z4np6oxJ1VhlsjnTLYd4",
+      thumbnail: "https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/28a45b12-4893-45ed-bea8-5f5deb20fb0e/dinos_addon_Thumbnail_0.jpg",
+      description: "Travel back in time with the Dinosaurs Add-On—featuring 150+ biome-specific dinos, DNA extraction, morphing, taming, and new gear in the official Bedrock Edition of The Lost World Modpack!",
+      tags: ["Honeyfrost", "Mod"]
+    },
+    {
+      name: "More TNT! Add-On",
+      url: "https://mega.nz/file/zHARBLBD#4kUNSR2C0lnoAKvJvBhbUoWLsdvWwiuGApNYdZHBYNw",
+      thumbnail: "https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/be3c2cc1-8426-4486-914c-13aa4b0f11ef/MoreTNT_Thumbnail_0.jpg",
+      description: "This explosive Add-On is pretty simple… It adds more TNT to any world you want! Craft yourself a wide selection of super overpowered and unique TNT types!",
+      tags: ["Tsunami Studios", "Mod"]
+    },
+    {
+      name: "DWELLERS 2.0 Add-On",
+      url: "https://mega.nz/file/iKZRWR7T#I4Q4_hMk000WGN-R7v9dIFSyRRUZS2GTGCcTRl1p50M",
+      thumbnail: "https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/5edd43a0-3004-4523-9aa2-d498069ef8c1/Dwellers_Thumbnail_0.jpg",
+      description: "Enter a world of terror with DWELLERS—face jump scares, blood moons, and horrors like The Knocker, Shadow Dweller, and 6 Mimics, all packed with VFX, sounds, and creepy new items!",
+      tags: ["Panascais", "Mod"]
+    },
+    {
+      name: "Cherry Tree Temple",
+      url: "https://mega.nz/file/OTBxQLJC#N5GpP8X4GidwC5shKmAK58Q6ZislVdBa5jtxDpla6PQ",
+      thumbnail: "https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/f25534b8-4dcf-46c8-8354-26610f92d50b/CC_CTT24_Thumbnail_0.jpg",
+      description: "UPDATED! Perched high in a massive cherry tree, this tiered treehouse temple is perfect for hangouts or battles—featuring a vast cherry forest, custom textures, and cherry-themed skins by CrackedCubes!",
+      tags: ["CrackedCubes", "World"]
+    },
+    {
+      name: "Cherry Tree Temple",
+      url: "https://mega.nz/file/HLAyALDR#UKQ7wlOr6GHIWeXVaPTHypwZ04RYkhKrcRtp_LMOzKU",
+      thumbnail: "https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/f25534b8-4dcf-46c8-8354-26610f92d50b/CC_CTT24_Thumbnail_0.jpg",
+      description: "UPDATED! Perched high in a massive cherry tree, this tiered treehouse temple is perfect for hangouts or battles—featuring a vast cherry forest, custom textures, and cherry-themed skins by CrackedCubes!",
+      tags: ["CrackedCubes", "Skin"]
     }
   ];
-  
+
   // === Rendering Logic ===
   const container = document.getElementById("fileContainer");
   const searchInput = document.getElementById("searchInput");
