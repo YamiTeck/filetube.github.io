@@ -1,3 +1,6 @@
+V1.2.1 - 5/11/2025
+- Hotfix for github logo not loading in top left of the screen
+
 V1.2 - 5/11/2025
 Change an error message to say the right thing if the pack wasn't found and added more packs.
 - 1st Birthday Skin Pack
