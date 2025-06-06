@@ -3,21 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>📁 FileTube</title>
-  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <meta name="description" content="FileTube – Explore and download curated Minecraft texture packs, skins, and mods. Search by tags or titles.">
+  <meta property="og:title" content="FileTube" />
+  <meta property="og:description" content="Curated Minecraft texture packs, skins, and mods." />
+  <meta property="og:image" content="https://yamiteck.github.io/filetube.github.io/assets/favicon.png" />
+  <meta property="og:url" content="https://yamiteck.github.io/filetube.github.io/" />
+  <title>📁 FileTube – Curated Minecraft Packs & Mods</title>
+  <link rel="icon" href="https://qwrz0w5il5tqu5fm.public.blob.vercel-storage.com/filetube%20assets/favicon-i55xGaRu1Q1jFeUMYJRWHN2Ez0VRZe.png" type="image/png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>📁 FileTube</h1>
-    <input type="text" id="searchInput" placeholder="Search files or @tags..." />
+    <input type="text" id="searchInput" placeholder="Search packs, movies, shows, or animes..." aria-label="Search packs, movies, shows, or animes" />
   </header>
 
-  <main id="fileContainer"></main>
+  <nav class="tab-nav">
+    <button class="tab-button active" id="movie-tab" onclick="switchTab('movie')">Movies</button>
+    <button class="tab-button" id="minecraft-tab" onclick="switchTab('minecraft')">Minecraft</button>
+  </nav>
+
+  <main id="videoContainer"></main>
 
   <script src="script.js"></script>
 
-<a href="https://github.com/YamiTeck/filetube.github.io" class="logo-link"><img src="https://cdn.discordapp.com/attachments/1224618173643358242/1371329560183836733/github-mark-white.png?ex=6822bdad&is=68216c2d&hm=185e70a1c200a677bca2600bf430126ca38b0225309d079a5cacb57c7ffbd3db&" alt="GitHub Mark" class="logo-img"></a>
-
+  <a href="https://github.com/YamiTeck/filetube.github.io" class="logo-link">
+    <img loading="lazy" src="https://qwrz0w5il5tqu5fm.public.blob.vercel-storage.com/filetube%20assets/github-mark-white-gceGMN0a4tA2Hq1nMDcieQ3xgXAkAF.png" alt="GitHub logo" class="logo-img">
+  </a>
 </body>
 </html>

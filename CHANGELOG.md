@@ -1,3 +1,9 @@
+V1.3 - 6/5/2025
+- Fixed the github logo not showing again
+- Added a new Movie section for downloading movies, shows, or anime
+- Improve the website
+- Improve the look of the website by [muskiei](https://github.com/Masionz7074)
+
 V1.2.3 - 5/11/2025
 - Hotfix, I might have solved the issuse I hope.
 
@@ -22,7 +28,6 @@ Change an error message to say the right thing if the pack wasn't found and adde
 - DWELLERS 2.0 Add-On
 - Cherry Tree Temple
 - Added github logo on top left to get back to repository
-- 
 
 V1.1 - 5/7/2025
 Added more packs

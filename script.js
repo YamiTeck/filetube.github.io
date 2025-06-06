@@ -1,5 +1,16 @@
-// === File Data ===
-const files = [
+// === Video Data ===
+const videos = [
+  {
+    name: "Mickey 17-1080P",
+    url: "https://mega.nz/file/gFwlGKYY#YAIoGKtNum2Ljj_HZaM5ME7g48kQofZ0PSYhrmXAH5M",
+    thumbnail: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdrVqHLLdDyvoVvB1alcO6ZYJOJPuDd89Hhb_Y8OUBN9sV5TCb",
+    description: "During a human expedition to colonize space, Mickey 17, a so-called expendable employee, is sent to explore an ice planet.",
+    genres: ["Adventure", "Comedy", "Sci-Fi"]
+  },
+];
+
+// === Minecraft Data ===
+const minecraft = [
     {
       name: "Fantasy Texture Pack",
       url: "https://mega.nz/file/DTRUGBJY#sviCEH5YzG3bQoDafiZYMffrOKkWLADLoOKlACjJ6Vw",
@@ -184,51 +195,120 @@ const files = [
     }
   ];
 
-  // === Rendering Logic ===
-  const container = document.getElementById("fileContainer");
-  const searchInput = document.getElementById("searchInput");
-  
-  function renderFiles(filter = "") {
-    container.innerHTML = "";
-    const keyword = filter.toLowerCase().trim();
-    const isTagSearch = keyword.startsWith("@");
-    const searchTerm = isTagSearch ? keyword.slice(1) : keyword;
-  
-    const filtered = files.filter(file => {
-      if (isTagSearch) {
-        return file.tags.some(tag => tag.toLowerCase().includes(searchTerm));
-      } else {
-        return (
-          file.name.toLowerCase().includes(searchTerm) ||
-          file.description.toLowerCase().includes(searchTerm)
-        );
-      }
-    });
-  
-    if (filtered.length === 0) {
-      container.innerHTML = "<p>No files found.</p>";
-      return;
+const container = document.getElementById("videoContainer");
+const searchInput = document.getElementById("searchInput");
+const movieTab = document.getElementById("movie-tab");
+const minecraftTab = document.getElementById("minecraft-tab");
+
+let currentTab = "movie";
+
+function renderVideos(filter = "") {
+  container.innerHTML = "";
+  const keyword = filter.toLowerCase().trim();
+  const isGenreSearch = keyword.startsWith("@");
+  const searchTerm = isGenreSearch? keyword.slice(1) : keyword;
+
+  const filtered = videos.filter(video => {
+    if (isGenreSearch) {
+      return video.genres.some(genre => genre.toLowerCase().includes(searchTerm));
+    } else {
+      return (
+        video.name.toLowerCase().includes(searchTerm) ||
+        video.description.toLowerCase().includes(searchTerm)
+      );
     }
-  
-    filtered.forEach(file => {
-      const card = document.createElement("div");
-      card.className = "file-card";
-  
-      card.innerHTML = `
-        <img src="${file.thumbnail}" class="file-thumb" alt="Thumbnail">
-        <div class="file-title"><a href="${file.url}" target="_blank">${file.name}</a></div>
-        <div class="file-desc">${file.description}</div>
-        <div class="tags">
-          ${file.tags.map(tag => `<span class="tag">@${tag}</span>`).join("")}
-        </div>
-      `;
-  
-      container.appendChild(card);
-    });
-  }
-  
-  searchInput.addEventListener("input", () => {
-    renderFiles(searchInput.value);
   });
-  
-  renderFiles();  
+
+  if (filtered.length === 0) {
+    container.innerHTML = "<p>No videos found.</p>";
+    return;
+  }
+
+  filtered.forEach(video => {
+    const card = document.createElement("div");
+    card.className = "video-card"; 
+
+    card.innerHTML = `
+      <img loading="lazy" src="${video.thumbnail}" class="video-thumb" alt="Thumbnail for ${video.name}">
+      <div class="video-title"><a href="${video.url}" target="_blank">${video.name}</a></div>
+      <div class="video-desc">${video.description}</div>
+      <div class="genres">
+        ${video.genres.map(genre => `<span class="genre" onclick="renderVideos('@${genre}')">@${genre}</span>`).join("")}
+      </div>
+    `;
+
+    container.appendChild(card);
+  });
+}
+
+function renderMinecraft(filter = "") {
+  container.innerHTML = "";
+  const keyword = filter.toLowerCase().trim();
+  const isTagSearch = keyword.startsWith("@");
+  const searchTerm = isTagSearch? keyword.slice(1) : keyword;
+
+  const filtered = minecraft.filter(pack => {
+    if (isTagSearch) {
+      return pack.tags.some(tag => tag.toLowerCase().includes(searchTerm));
+    } else {
+      return (
+        pack.name.toLowerCase().includes(searchTerm) ||
+        pack.description.toLowerCase().includes(searchTerm)
+      );
+    }
+  });
+
+  if (filtered.length === 0) {
+    container.innerHTML = "<p>No Minecraft packs found.</p>";
+    return;
+  }
+
+  filtered.forEach(pack => {
+    const card = document.createElement("div");
+    card.className = "video-card";
+
+    card.innerHTML = `
+      <img loading="lazy" src="${pack.thumbnail}" class="video-thumb" alt="Thumbnail for ${pack.name}">
+      <div class="video-title"><a href="${pack.url}" target="_blank">${pack.name}</a></div>
+      <div class="video-desc">${pack.description}</div>
+      <div class="genres">
+        ${pack.tags.map(tag => `<span class="genre" onclick="renderMinecraft('@${tag}')">@${tag}</span>`).join("")}
+      </div>
+    `;
+
+    container.appendChild(card);
+  });
+}
+
+function switchTab(tab) {
+  if (tab === "movie") {
+    movieTab.classList.add("active");
+    minecraftTab.classList.remove("active");
+    currentTab = "movie";
+    renderVideos(searchInput.value);
+  } else if (tab === "minecraft") {
+    movieTab.classList.remove("active");
+    minecraftTab.classList.add("active");
+    currentTab = "minecraft";
+    renderMinecraft(searchInput.value);
+  }
+}
+
+// Debounce helper
+function debounce(func, delay) {
+  let timeout;
+  return (...args) => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func(...args), delay);
+  };
+}
+
+searchInput.addEventListener("input", debounce(() => {
+  if (currentTab === "movie") {
+    renderVideos(searchInput.value);
+  } else if (currentTab === "minecraft") {
+    renderMinecraft(searchInput.value);
+  }
+}, 200));
+
+renderVideos();
